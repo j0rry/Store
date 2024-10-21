@@ -22,6 +22,7 @@ class Program
 
         Data data = LoadFile();
 
+        // Reset Money with args
         if (args.Length > 0 && args[0].Equals("reset", StringComparison.OrdinalIgnoreCase))
         {
             data.Money = int.TryParse(args[1], out int result) ? result : 1000;
